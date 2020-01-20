@@ -1,0 +1,2 @@
+INSERT INTO users (id, username, email, password, authorities, created_on, modified_on) VALUES (1, 'admin', 'admin@jimbank.com', '{noop}admin', 'ROLE_USER,ROLE_ADMIN', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());
+INSERT INTO users (id, username, email, password, authorities, created_on, modified_on) VALUES (2, 'user', 'user@jimbank.com', '{noop}1234', 'ROLE_USER', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP());

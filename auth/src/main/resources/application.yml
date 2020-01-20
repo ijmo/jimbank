@@ -1,0 +1,9 @@
+server:
+  port: 8900
+
+spring:
+  profiles:
+    active: dev
+  output:
+    ansi:
+      enabled: ALWAYS
