@@ -1,11 +1,11 @@
-package ijmo.jimbank.zuul
+package ijmo.jimbank.gateway
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ZuulApplication
+class GatewayApplication
 
 fun main(args: Array<String>) {
-	runApplication<ZuulApplication>(*args)
+    runApplication<GatewayApplication>(*args)
 }

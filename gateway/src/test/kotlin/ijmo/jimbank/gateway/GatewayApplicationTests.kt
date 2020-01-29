@@ -1,13 +1,13 @@
-package ijmo.jimbank.zuul
+package ijmo.jimbank.gateway
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ZuulApplicationTests {
+class GatewayApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+    @Test
+    fun contextLoads() {
+    }
 
 }
