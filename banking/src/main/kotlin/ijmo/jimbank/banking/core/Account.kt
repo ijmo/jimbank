@@ -20,6 +20,9 @@ class Account : BaseEntity {
     @Column(name = "owner")
     var ownerId: String? = null
 
+    @Column(name = "enabled")
+    var enabled: Boolean? = true
+
     @Column(name = "created_on")
     @CreatedDate
     var createdOn: LocalDateTime? = LocalDateTime.now()
@@ -34,10 +37,7 @@ class Account : BaseEntity {
         this.ownerId = ownerId
     }
 
-    constructor() {
-        createdOn = LocalDateTime.now()
-        modifiedOn = LocalDateTime.now()
-    }
+    constructor()
 
     override fun toString() = "Account(accountNo=$accountNo, balance=$balance, ownerId=$ownerId)"
 
