@@ -33,11 +33,13 @@ class BankingService (private val accountRepository: AccountRepository) {
     /**
      * 계좌 상태 변경
      */
+    @Transactional
     fun update(account: Account, enabled: Boolean): Account? {
         account.enabled = enabled
         return accountRepository.save(account)
     }
 
+    @Transactional
     fun update(accountNo: String, enabled: Boolean): Account? {
         val account = findByAccountNo(accountNo) ?: throw AccountNotFoundException("")
         return update(account, enabled)
